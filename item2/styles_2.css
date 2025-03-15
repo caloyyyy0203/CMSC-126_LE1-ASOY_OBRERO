@@ -8,12 +8,12 @@ body {
 
 header {
     background: #cee3f8;
-    padding: 10px 20px;
-    border-bottom: 2px solid #a7bed3;
+    padding: 10px 10px 0px 10px;  /* Remove extra padding */
+    border-bottom: 2px solid #a0a0a0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /* Ensures vertical alignment */
 }
 
 .left {
@@ -23,13 +23,21 @@ header {
 
 .user-info {
     background-color: white;
-    padding: 0.5em;
-    margin-right: 1em;
-    z-index: 6;
-    position: absolute;
-    right: 8px;
-    bottom: 722px;
+    padding: 10px 15px;
+    border-radius: 5px 5px 0px 0px;
+    border: 2px solid #a0a0a0;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    top: 1px; /* Slightly pushes it over navbar */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+
 
 .logo {
     font-size: 20px;
@@ -41,41 +49,66 @@ header {
 .icon {
     width: 3em;
     height: auto;
+    margin-right: 5px;
+    vertical-align: middle; /* Prevents spacing issues */
 }
 
 .navbar {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-left: 15em;
-    height: 50px
+    align-items: center; /* Aligns items vertically */
+    justify-content: space-between; /* Ensures proper spacing */
+    padding-left: 12em;
+    height: 35px;
 }
 
 .mid {
-    width: 700px;
-    justify-content: space-between;
-    position: absolute;
-    z-index: 6;
-    bottom: 670px;
+    display: flex;
+    justify-content: space-between; /* Keeps buttons in a row */
+    position: relative; /* Ensure it stays in place */
 }
 
 .mid button {
-    margin-right: 15px;
-    padding: 7px
+    padding: 5px 10px;
+    margin-right: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0056b3;
+    background: linear-gradient(to bottom, #ffffff, #dcdcdc); /* Creates the 3D effect */
+    border: 2px solid #a0a0a0; /* Slightly darker border */
+    border-radius: 6px 6px 0px 0px; /* Rounded top corners */
+    cursor: pointer;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .mid button.active {
     color: #ff4500;
-    font-weight: bold;
-    border-bottom: none;
-    background-color: #ffffff;
+    background: linear-gradient(to bottom, #ffffff, #f5f5f5); /* Slightly different for active */
+    border-bottom: 2px solid white; /* Removes bottom border */
+    position: relative;
+    top: 5px; /* Pushes it slightly up for effect */
+}
+.mid button.active1 {
+    color: #0056b3;
+    background: linear-gradient(to bottom, #ffffff, #f5f5f5); /* Slightly different for active */
+    border-bottom: 2px solid white; /* Removes bottom border */
+    position: relative;
+    top: 5px; /* Pushes it slightly up for effect */
 }
 
 .right {
     display: flex;
-    flex-direction: row;
+    align-items: center; /* Ensures vertical alignment */
+    gap: 20px; /* Space between search bar and stats */
     margin-left: auto;
-    margin-right: 10px
+    padding-right: 5em;
+}
+
+/* Search Bar */
+.search-bar {
+    padding: 6px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    vertical-align: middle;
 }
 
 nav ul {
@@ -178,4 +211,46 @@ main {
     padding: 15px;
     border-left: #b1b1b1 2px solid;
     
+}
+
+.right {
+    display: flex;
+    flex-direction: row; /* Aligns search bar and stats vertically */
+    align-items: flex-start; /* Ensures left alignment */
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between elements */
+    background: #f5f5f5;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.stats span {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid #bbb;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.msg {
+    color: #ff4500;
+}
+
+.links {
+    color: #0079d3;
+}
+
+.comments {
+    color: #666;
 }
