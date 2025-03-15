@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Cooking Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Chicken Adobo Recipe</h1>
+    </header>
+
+    <main>
+        <section id="intro" tabindex="0">
+            <h2 aria-hidden="true">Introduction</h2>
+            <p>
+                Chicken Adobo is one of the most beloved and iconic dishes in Filipino cuisine. Known for its rich, savory, and slightly tangy flavor, this dish is made by simmering chicken in a flavorful mixture of soy sauce, vinegar, garlic, bay leaves, and black peppercorns. The result is a tender, well-seasoned dish with a perfect balance of salty, sour, and umami flavors. Its simplicity, versatility, and delicious taste have made it a staple in Filipino households and a favorite among food lovers worldwide.
+            </p>
+            <p>
+                In this tutorial, we will guide you step by step on how to prepare an authentic Chicken Adobo that’s both easy to cook and packed with flavor. Whether you're new to Filipino cooking or simply looking to perfect your adobo recipe, this guide will help you achieve that rich, mouthwatering taste. Get ready to enjoy a hearty, comforting dish that pairs perfectly with a warm plate of rice!
+            </p>
+
+            <div class="recipe-info">
+                <div class="container">
+
+                    <div><strong class="green-text">SERVES</strong><br>4 to 6</div>
+                </div>
+            
+                <div class="container">
+                   
+                    <div><strong class="green-text">PREP</strong><br>5 minutes</div>
+                </div>
+            
+                <div class="container">
+                    
+                    <div><strong class="green-text">COOK</strong><br>42 minutes</div>
+                </div>
+            </div>
+                 
+
+            <button class="btn" onclick="location.href='#ingredients'">Jump to Ingredients &raquo;</button>
+
+        </section>
+
+        <section id="ingredients" tabindex="0">
+            <h2 aria-hidden="true">Ingredients</h2>
+            <ul>
+                <li>1 kg chicken (cut into serving pieces)</li>
+                <li>1/2 cup soy sauce</li>
+                <li>1/2 cup vinegar</li>
+                <li>4 garlic cloves (crushed)</li>
+                <li>3 bay leaves</li>
+                <li>1 tsp black peppercorns</li>
+                <li>1 tbsp cooking oil</li>
+                <li>1 cup water (optional, for more sauce)</li>
+            </ul>
+            <button class="btn start" onclick="location.href='#step1'">Start Cooking &raquo;</button>
+        </section>
+        
+
+        <section id="step1" class="step" tabindex="0">
+            <h2>Step 1: Marinate the Chicken</h2>
+            <img src="/item3/steps/1.png" alt="Marinate Chicken" aria-hidden="true">
+            <p>In a bowl, combine the chicken pieces, soy sauce, and crushed garlic. Mix well and let it marinate for at least 30 minutes to absorb the flavors.</p>
+            <a href="#step2" aria-label="Go to Step 2" class="next">Next</a>
+        </section>
+
+        <section id="step2" class="step" tabindex="0">
+            <h2>Step 2: Sear the Chicken</h2>
+            <img src="/item3/steps/2.png" alt="Sear Chicken" aria-hidden="true">
+            <p>Heat vegetable oil in a large skillet over medium-high heat. Cook chicken pieces until golden brown, 2 to 3 minutes per side. Transfer chicken to a plate and set aside.</p>
+            <a href="#step1" aria-label="Go back to Step 1" class="prev">Previous</a>
+            <a href="#step3" aria-label="Go to Step 3" class="next">Next</a>
+        </section>
+        
+        <section id="step3" class="step" tabindex="0">
+            <h2>Step 3: Simmer the Adobo</h2>
+            <img src="/item3/steps/3.png" alt="Simmer sauce" aria-hidden="true">
+            <p>Pour the reserved marinade into the pan. Add the vinegar, bay leaves, black peppercorns, and water (if you prefer more sauce). Bring to a boil, then reduce the heat to low and let it simmer uncovered for 30-40 minutes until the chicken is tender.</p>
+            <a href="#step2" aria-label="Go back to Step 2" class="prev">Previous</a>
+            <a href="#step4" aria-label="Go to Step 4" class="next">Next</a>
+        </section>
+        
+        <section id="step4" class="step" tabindex="0">
+            <h2>Step 4: Adjust the Flavor</h2>
+            <img src="/item3/steps/4.png" alt="Adjust flavor" aria-hidden="true">
+            <p>Taste the sauce and adjust with additional soy sauce or vinegar if needed. Simmer for a few more minutes until the sauce thickens slightly.</p>
+            <a href="#step3" aria-label="Go back to Step 3" class="prev">Previous</a>
+            <a href="#step5" aria-label="Go to Step 5" class="next">Next</a>
+        </section>
+        
+        <section id="step5" class="step" tabindex="0" aria-hidden="true">
+            <h2>Step 5: Serve and Enjoy</h2>
+            <img src="/item3/steps/5.png" alt="Serve and enjoy">
+            <p>Serve hot with steamed rice and enjoy your Chicken Adobo!</p>
+            <a href="#step4" aria-label="Go back to Step 4"class="prev">Previous</a>
+            <a href="#step1" aria-label="Go to Step 1" class="restart">Restart</a>
+        </section>
+    </main>
+</body>
+</html>

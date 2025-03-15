@@ -1,0 +1,159 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                url('/item3/steps/header.JPG') center/cover no-repeat;
+    color: white;
+    height: 95vh;
+    display: flex;
+    align-items: flex-end; /* Align to bottom */
+    justify-content: flex-start; /* Align to right */
+}
+header h1 {
+    font-size: 5rem; /* Adjust text size */
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#intro {
+    text-align: justify;
+    max-width: 60%;
+    margin: 0 auto; 
+}
+
+#ingredients {
+    text-align: justify;
+    max-width: 60%;
+    margin: 0 auto; 
+    margin-top: 90px;
+}
+
+.btn {
+    background-color: #ffc107; 
+    color: white;   
+    padding: 10px 20px;     
+    margin-left: 1em;
+    border: none;      
+    border-radius: 8px;   
+    font-size: 16px;   
+    cursor: pointer;  
+    transition: background 0.3s ease;
+    float: left;
+}
+
+.btn:hover {
+    background-color: #a77c03;
+}
+
+.start {
+    margin-bottom: 2em;
+}
+
+.recipe-info {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.recipe-info div {
+    text-align: center;
+}
+.green-text {
+    color: green;
+}
+
+.step {
+    display: none;
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    margin-top: 120px;
+    margin-bottom: 80px;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.step img {
+    max-width: 100%;  
+    height: auto;     
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+
+:target {
+    display: block;
+}
+
+a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+a.prev {
+    background: #ffc107;
+}
+
+a.next {
+
+}
+
+a.restart {
+    background: #dc3545;
+}
+
+a:focus, a:hover {
+    outline: 2px solid black;
+}
+
+.recipe-info {
+    display: flex;
+    gap: 10px; /* Space between containers */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white; /* White background */
+    border: 2px solid black; /* Black border */
+    padding: 10px; /* Inner padding */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+
+.green-text {
+    color: #4CAF50; /* Green color */
+}
+
