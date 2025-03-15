@@ -1,0 +1,166 @@
+/* General Layout */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    font-size: 30px;
+}
+
+/* Main Container */
+.news-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Main newsfeed + sidebar */
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* Newsfeed Layout */
+.newsfeed {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Article Cards */
+.news-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+/* Hover Effect */
+.news-card:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+/* Image Container */
+.news-image {
+    position: relative;
+    width: 100%;
+}
+
+/* Image Styling */
+.news-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Overlay with Gradient */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    padding: 20px;
+}
+
+/* Title Inside Image */
+.overlay h2 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* News Content */
+.news-content {
+    padding: 15px;
+    padding-top: 5px;
+}
+
+/* Date */
+.news-content .date {
+    color: gray;
+    font-size: 0.9rem;
+}
+
+/* Paragraph */
+.news-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Read More Link */
+.news-content a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.news-content a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Sidebar */
+.sidebar {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    align-self: flex-start;
+}
+
+
+/* Sidebar Text */
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Sidebar Links */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+/* Sidebar Links Hover Effect */
+.sidebar ul li a {
+    text-decoration: none;
+    color: rgb(52, 46, 46);
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.sidebar ul li a:hover {
+    color: red;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .news-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        order: 2;
+    }
+}
