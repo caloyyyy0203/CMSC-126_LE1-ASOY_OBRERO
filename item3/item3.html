@@ -12,8 +12,7 @@
 
 <body>
     <header>
-        <h1>cooking ina</h1>
-        <!-- <h2>Chicken Adobo Recipe</h2> -->
+        <h1><a href="#" class="back_top">cooking ina</a></h1>
     </header>
 
     <main>
@@ -68,56 +67,67 @@
 
         </section>
 
-        <section id="ingredients" tabindex="0">
-            <h2 aria-hidden="true">Ingredients</h2>
-            <ul>
-                <li>1 kg chicken (cut into serving pieces)</li>
-                <li>1/2 cup soy sauce</li>
-                <li>1/2 cup vinegar</li>
-                <li>4 garlic cloves (crushed)</li>
-                <li>3 bay leaves</li>
-                <li>1 tsp black peppercorns</li>
-                <li>1 tbsp cooking oil</li>
-                <li>1 cup water (optional, for more sauce)</li>
-            </ul>
-            <button class="btn start" onclick="location.href='#step1'">Start Cooking &raquo;</button>
+        <section id="ingredients" tabindex="0"> 
+            <div class="ingredients-text">
+                <h2 aria-hidden="true">Ingredients</h2>
+                <ul>
+                    <li>1 kg chicken (cut into serving pieces)</li>
+                    <li>1/2 cup soy sauce</li>
+                    <li>1/2 cup vinegar</li>
+                    <li>4 garlic cloves (crushed)</li>
+                    <li>3 bay leaves</li>
+                    <li>1 tsp black peppercorns</li>
+                    <li>1 tbsp cooking oil</li>
+                    <li>1 cup water (optional, for more sauce)</li>
+                </ul>
+                <button class="btn_2" onclick="location.href='#step1'">
+                    Start Cooking &raquo;
+                </button>
+            </div>
+        
+            <!-- <div class="image_container_ing">
+                <img class="image_ing" src="../item3/steps/ingredients.jpg" alt="adobo">
+            </div> -->
         </section>
+        
         
 
         <section id="step1" class="step" tabindex="0">
-            <h2>Step 1: Marinate the Chicken</h2>
+            
             <img src="../item3/steps/1.png" alt="Marinate Chicken" aria-hidden="true">
+            <h2>Step 1: Marinate the Chicken</h2>
             <p>In a bowl, combine the chicken pieces, soy sauce, and crushed garlic. Mix well and let it marinate for at least 30 minutes to absorb the flavors.</p>
+            
             <a href="#step2" aria-label="Go to Step 2" class="next">Next</a>
         </section>
 
         <section id="step2" class="step" tabindex="0">
-            <h2>Step 2: Sear the Chicken</h2>
             <img src="../item3/steps/2.png" alt="Sear Chicken" aria-hidden="true">
+            <h2>Step 2: Sear the Chicken</h2>
             <p>Heat vegetable oil in a large skillet over medium-high heat. Cook chicken pieces until golden brown, 2 to 3 minutes per side. Transfer chicken to a plate and set aside.</p>
             <a href="#step1" aria-label="Go back to Step 1" class="prev">Previous</a>
             <a href="#step3" aria-label="Go to Step 3" class="next">Next</a>
         </section>
         
         <section id="step3" class="step" tabindex="0">
-            <h2>Step 3: Simmer the Adobo</h2>
             <img src="../item3/steps/3.png" alt="Simmer sauce" aria-hidden="true">
+            <h2>Step 3: Simmer the Adobo</h2>
             <p>Pour the reserved marinade into the pan. Add the vinegar, bay leaves, black peppercorns, and water (if you prefer more sauce). Bring to a boil, then reduce the heat to low and let it simmer uncovered for 30-40 minutes until the chicken is tender.</p>
             <a href="#step2" aria-label="Go back to Step 2" class="prev">Previous</a>
             <a href="#step4" aria-label="Go to Step 4" class="next">Next</a>
         </section>
         
         <section id="step4" class="step" tabindex="0">
-            <h2>Step 4: Adjust the Flavor</h2>
             <img src="../item3/steps/4.png" alt="Adjust flavor" aria-hidden="true">
+            <h2>Step 4: Adjust the Flavor</h2>
             <p>Taste the sauce and adjust with additional soy sauce or vinegar if needed. Simmer for a few more minutes until the sauce thickens slightly.</p>
             <a href="#step3" aria-label="Go back to Step 3" class="prev">Previous</a>
             <a href="#step5" aria-label="Go to Step 5" class="next">Next</a>
         </section>
         
         <section id="step5" class="step" tabindex="0" aria-hidden="true">
-            <h2>Step 5: Serve and Enjoy</h2>
             <img src="../item3/steps/5.png" alt="Serve and enjoy">
+            <h2>Step 5: Serve and Enjoy</h2>
             <p>Serve hot with steamed rice and enjoy your Chicken Adobo!</p>
             <a href="#step4" aria-label="Go back to Step 4"class="prev">Previous</a>
             <a href="#step1" aria-label="Go to Step 1" class="restart">Restart</a>

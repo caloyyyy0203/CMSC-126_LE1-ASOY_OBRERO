@@ -27,6 +27,12 @@ header {
     box-shadow: 1px -10px 20px  #656565;
 }
 
+.back_top{
+    text-decoration: none; 
+    color: inherit; /* Keeps the original text color */
+    cursor: pointer;
+}
+
 
 header h1 {
     font-family: "Questrial", sans-serif;
@@ -51,8 +57,9 @@ header h2 {
     justify-content: center; /* Centers content */
     width: 100%;
     gap: 0em; /* No extra space between image and text */
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color: #e62208;
     margin-top: 100px; /* Prevents overlap with fixed header */
 }
 
@@ -80,7 +87,7 @@ header h2 {
 }
 
 .recipe_name_container {
-    background-color: white;
+    background-color: #e62208;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,8 +97,9 @@ header h2 {
       
 }
 
-.recipe_name_container p {
+.recipe_name_container p{
     margin: 0; 
+    color: white;
       
 }
 
@@ -102,10 +110,10 @@ header h2 {
 
 .recipe_name {
     font-family: "Questrial", sans-serif;
-  font-weight: 400;
+  font-weight: 800;
   font-style: normal;
-    font-size: 2em;
-    color: #e62208;
+    font-size: 4em;
+    color: #ffffff;
     text-align: center;
     margin: 0;
 }
@@ -137,12 +145,33 @@ nav a {
 }
 
 #ingredients {
+    display: flex;
+    align-items: flex-start; /* Aligns items at the top */
+    justify-content: space-between; /* Pushes text left & image right */
     text-align: justify;
     max-width: 60%;
-    margin: 0 auto; 
-    margin-top: 90px;
-    border-top: 1px solid black;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    background-image:linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),   url("../item3/steps/ingredients.jpg");/* Set the background image */
+    background-size: cover; /* Ensures the image covers the div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repetition */
+    gap: 2em; /* Adds space between text and image */
+    border-radius: 8px;
 }
+
+/* Ensures text content stays on the left */
+.ingredients-text {
+    color: #ffffff;
+    font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    padding-left: 5em;
+    flex: 1; /* Takes most of the space */
+}
+
+
 
 .btn {
     border-color: 1px solid black;
@@ -157,8 +186,29 @@ nav a {
     float: left;
 }
 
+.btn_2 {
+    border-color: transparent;
+    background-color: #e62208; 
+    color: rgb(255, 255, 255);   
+    padding: 10px 20px;     
+    margin-left: 1em;
+    margin-bottom: 2em;
+    border-radius: 50px;   
+    font-size: 16px;   
+    cursor: pointer;  
+    transition: background 0.3s ease;
+    float: left;
+}
+
 .btn:hover {
     background-color: #e62208;
+    color: #ffffff;
+    border-color: transparent;
+}
+
+.btn_2:hover {
+    background-color: #ffffff;
+    color: #e62208;
 }
 
 .start {
@@ -175,7 +225,7 @@ nav a {
     background: white;
     padding: 20px;
     margin: 20px auto;
-    margin-top: 120px;
+    margin-top: 10em;
     margin-bottom: 80px;
     width: 50%;
     border-radius: 10px;
@@ -200,7 +250,7 @@ nav a {
     display: block;
 }
 
-a {
+.step a {
     display: inline-block;
     margin: 10px;
     padding: 5px;
@@ -218,13 +268,21 @@ a.prev {
     box-shadow: 1px 1px 3px #656565;
 }
 
+a.prev:hover{
+    outline: 2px solid #e62208;
+    color:#ffffff;
+    background-color: #e62208;
+}
+
 
 a.restart {
     background: #e62208;
 }
 
-a:focus, a:hover {
-    outline: 2px solid black;
+.step a:focus, .step a:hover {
+    outline: 2px solid #0ca742;
+    color:#0ca742;
+    background-color: white;
 }
 
 .recipe-info {
@@ -232,6 +290,8 @@ a:focus, a:hover {
     display: flex;
     gap: 3em; /* Adjust this value to control spacing */
     justify-content: center; /* Ensures containers are centered */
+    padding-bottom: 30px;
+    border-bottom:2px solid black;
 }
 
 /* .container {
@@ -250,6 +310,7 @@ a:focus, a:hover {
 
 
 /* General styling for all containers */
+
 .container_s, .container_p, .container_c {
     display: flex;
     align-items: flex-end; /* Aligns text at the bottom */
@@ -264,6 +325,7 @@ a:focus, a:hover {
     font-weight: bold;
     text-align: right;
     overflow: hidden; /* Ensures no content overflows */
+    transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
 }
 
 /* Add background images with gradient */
@@ -296,6 +358,13 @@ a:focus, a:hover {
     font-family: "Questrial", sans-serif;
   font-style: normal;
   font-weight: 100;
+}
+
+.container_s:hover, 
+.container_p:hover, 
+.container_c:hover {
+    transform: translateY(-10px); /* Moves the element up */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Adds subtle shadow for a floating effect */
 }
 
 /* Make the green text stand out */
