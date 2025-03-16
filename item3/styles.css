@@ -182,6 +182,13 @@ nav a {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+.step h2{
+    font-family: "Questrial", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+    color: #e62208; 
+}
+
 .step img {
     max-width: 100%;  
     height: auto;     
@@ -195,25 +202,25 @@ nav a {
 
 a {
     display: inline-block;
-    border: 1px solid #e62208;
     margin: 10px;
-    padding: 10px;
-    background: transparent;
-    color: rgb(1, 1, 1);
-    border-radius: 20px;
+    padding: 5px;
+    width: 8em;
+    height: auto;
+    background:#0ca742;
+    color: rgb(247, 247, 247);
+    border-radius: 80px;
     text-decoration: none;
 }
 
 a.prev {
-    background: #ffc107;
+    background: #ffffff;
+    color: #e62208;
+    box-shadow: 1px 1px 3px #656565;
 }
 
-a.next {
-
-}
 
 a.restart {
-    background: #dc3545;
+    background: #e62208;
 }
 
 a:focus, a:hover {
