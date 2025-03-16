@@ -1,28 +1,115 @@
 html {
-    scroll-behavior: smooth;
+    scroll-behavior:auto;
+    
 }
 
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    padding: 20px;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
-                url('/item3/steps/header.JPG') center/cover no-repeat;
-    color: white;
-    height: 95vh;
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: rgb(0, 0, 0);
     display: flex;
-    align-items: flex-end; /* Align to bottom */
-    justify-content: flex-start; /* Align to right */
+    justify-content: center;
+    height: 100px; /* Define header height */
+    align-items: center;
+    z-index: 1000; /* Ensure it stays above other content */
+    box-shadow: 1px -10px 20px  #656565;
 }
+
+
 header h1 {
+    font-family: "Questrial", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: #e62208;
+    font-size: 3rem;
+    margin: 0;
+    justify-items: center;
+}
+
+  
+
+header h2 {
     font-size: 5rem; /* Adjust text size */
     margin: 0;
 }
+
+.container_1 { 
+    display: flex;
+    align-items: center; /* Vertically aligns items */
+    justify-content: center; /* Centers content */
+    width: 100%;
+    gap: 0em; /* No extra space between image and text */
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-top: 100px; /* Prevents overlap with fixed header */
+}
+
+.container_1 p{ 
+    color: #706f6f;
+}
+.container_2{
+    display: flex;
+    align-items: center;
+}
+
+.container_2 h2{
+    font-family: "Questrial", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+    color: #e62208;
+}
+
+.image_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60em; /* Ensures both containers have the same width */
+    height: auto;
+}
+
+.recipe_name_container {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40em; /* Ensures both containers have the same width */
+    flex-direction: column; /* Stacks title and author vertically */
+    height: auto;  
+      
+}
+
+.recipe_name_container p {
+    margin: 0; 
+      
+}
+
+.image {
+    width: 60em; /* Ensures it takes full width of the container */
+    height: 40em;
+}
+
+.recipe_name {
+    font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 2em;
+    color: #e62208;
+    text-align: center;
+    margin: 0;
+}
+
 
 nav ul {
     list-style: none;
@@ -43,6 +130,7 @@ nav a {
 }
 
 #intro {
+    padding-top: 1em; 
     text-align: justify;
     max-width: 60%;
     margin: 0 auto; 
@@ -53,15 +141,16 @@ nav a {
     max-width: 60%;
     margin: 0 auto; 
     margin-top: 90px;
+    border-top: 1px solid black;
 }
 
 .btn {
-    background-color: #ffc107; 
-    color: white;   
+    border-color: 1px solid black;
+    background-color: transparent; 
+    color: rgb(4, 1, 1);   
     padding: 10px 20px;     
     margin-left: 1em;
-    border: none;      
-    border-radius: 8px;   
+    border-radius: 50px;   
     font-size: 16px;   
     cursor: pointer;  
     transition: background 0.3s ease;
@@ -69,24 +158,17 @@ nav a {
 }
 
 .btn:hover {
-    background-color: #a77c03;
+    background-color: #e62208;
 }
 
 .start {
     margin-bottom: 2em;
 }
 
-.recipe-info {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
-}
 .recipe-info div {
-    text-align: center;
+    text-align: flex-end;
 }
-.green-text {
-    color: green;
-}
+
 
 .step {
     display: none;
@@ -113,11 +195,12 @@ nav a {
 
 a {
     display: inline-block;
+    border: 1px solid #e62208;
     margin: 10px;
     padding: 10px;
-    background: #28a745;
-    color: white;
-    border-radius: 5px;
+    background: transparent;
+    color: rgb(1, 1, 1);
+    border-radius: 20px;
     text-decoration: none;
 }
 
@@ -138,12 +221,13 @@ a:focus, a:hover {
 }
 
 .recipe-info {
+    margin-top: 3em;
     display: flex;
-    gap: 50px; /* Adjust this value to control spacing */
+    gap: 3em; /* Adjust this value to control spacing */
     justify-content: center; /* Ensures containers are centered */
 }
 
-.container {
+/* .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -151,12 +235,72 @@ a:focus, a:hover {
     border: 2px solid black; 
     padding: 10px; 
     border-radius: 8px; 
+    width: 10em;
+    height: 10em;
     margin: 0; /* Ensure no extra margin */
+/* } */
+
+
+
+/* General styling for all containers */
+.container_s, .container_p, .container_c {
+    display: flex;
+    align-items: flex-end; /* Aligns text at the bottom */
+    justify-content: flex-end; /* Aligns text to the right */
+    position: relative; /* Allows positioning inside */
+    width: 25em;
+    height: 15em;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 0;
+    color: white; /* Makes text visible */
+    font-weight: bold;
+    text-align: right;
+    overflow: hidden; /* Ensures no content overflows */
 }
 
-.green-text {
-    color: #ffc107; 
+/* Add background images with gradient */
+.container_s {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7)), 
+                url('../item3/steps/1.png') no-repeat center center;
+    background-size: cover;
 }
+
+.container_p {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7)), 
+                url('../item3/steps/2.png') no-repeat center center;
+    background-size: cover;
+}
+
+.container_c {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7)), 
+                url('../item3/steps/4.png') no-repeat center center;
+    background-size: cover;
+}
+
+/* Text positioning inside the box */
+.container_s div, .container_p div, .container_c div {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.container_s p, .container_p p, .container_c p {
+    margin: 0;
+    font-family: "Questrial", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+/* Make the green text stand out */
+.green-text {
+    font-family: "Questrial", sans-serif;
+    font-size: 2em;
+    margin: 0;
+  font-style: normal;
+    color: #ffffff;
+    display: block;
+}
+
 
 
 
