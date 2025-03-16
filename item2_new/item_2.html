@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="left-flexbox">
+            <img class="icon" src="reddit.PNG" alt="Reddit Icon" />
+            <a href="#">
+                <img class="logo" src="logo.png" alt="Logo" />
+            </a>
+            <img class="icon" src="reddit.PNG" alt="Reddit Icon" />
+            <img class="icon" src="reddit.PNG" alt="Reddit Icon" />
+            <img class="icon" src="reddit.PNG" alt="Reddit Icon" />
+            <img class="icon" src="reddit.PNG" alt="Reddit Icon" />
+            <img class="icon" src="reddit.PNG" alt="Reddit Icon" />  
+        </div>
+        <div class="right-flexbox">
+            <div class="user-info">
+                <a href="#">7hundredand77</a>, <span>you're back!</span>
+                <a href="#">preferences</a> | <a href="#">logout? :(</a>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="mid">
+            <button class="active">What's Hot</button>
+            <button class="active1">New</button>
+            <button class="active1">Controversial</button>
+            <button class="active1">Top</button>
+            <button class="active1">Saved</button>
+        </div>
+        <div class="nav-container">
+            <form class="search-bar">
+                <input type="text" placeholder="Search" aria-label="Search" />
+                <button class="search-button" type="submit">🔍</button>
+            </form>
+            <div class="stats">
+                <span class="msg">📩 1 New Msg</span>
+                <span class="links">🔗 53,211 Links</span>
+                <span class="comments">💬 4,887 Comments</span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <aside class="flex-container">
+            <div class="side-menu">
+                <ul>
+                    <li><a href="#">📝 FRONT PAGE</a></li>
+                    <li><a href="#">📷 PICS</a></li>
+                    <li><a href="#">🔬 SCIENCE</a></li>
+                    <li><a href="#">💻 TECHNOLOGY</a></li>
+                    <li><a href="#">❓ ASK REDDIT</a></li>
+                    <li><a href="#">😂 FUNNY</a></li>
+                    <li><a href="#">😱 WTF</a></li>
+                    <li style="background-color: #fff; border-top: 1px solid #d7d7d7; border-bottom: 1px solid #d7d7d7;border-left: 0px solid #ff4500;">
+                    <a href="#" style="color: #ff4500; font-weight: bold; text-decoration: none;">📣 IAMA</a></li>
+                    <li><a href="#">🌍 WORLD NEWS</a></li>
+                    <li><a href="#">📚 TODAYILEARNED</a></li>
+                    <li><a href="#">🌐 WORLDNEWS</a></li>
+                    <li><a href="#">💻 WEBDESIGN</a></li>
+                    <li><a href="#">🛐 ATHEIST</a></li>
+                    <li><a href="#">😤 FFFFFUUUUUUUUU</a></li>
+                    <li><a href="#" style="color: rgb(0, 81, 255);">(MORE)</a></li>
+                </ul>
+    
+                <div class="create-community">
+                    <h3>Submit a link</h3>
+                    <p>to anything interesting: news article, blog entry, video, picture...</p>
+                </div>
+                <div class="create-community">
+                    <h3>Create Community</h3>
+                    <p>Join to share your interests.</p>
+                </div>
+    
+            </div>
+        </aside>
+
+        <section class="content-container">
+            <article class="box">Flexbox 2</article>
+            <article class="box">Flexbox 3</article>
+        </section>
+    </main>
+
+</body>
+</html>
