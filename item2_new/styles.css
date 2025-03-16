@@ -279,13 +279,18 @@ li a:hover {
 }
 
 .create-community {
+    border: 1px solid #a0a0a0;
     color: #000;
     background: #cae3fd;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 0.5em;
+    width: 11em;
 }
 
+.create-community h3{
+    color: #0056b3;
+}
 /* Content area (Flexbox 2 and 3) */
 .content-container {
     margin-left: 250px; /* Ensure content starts after the side menu */
