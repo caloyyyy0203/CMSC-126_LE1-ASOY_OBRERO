@@ -1,0 +1,752 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Header styles */
+/* Header container */
+header {
+    background: #cee3f8;
+    padding: 10px 10px 0px 10px;  /* Remove extra padding */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /* Ensures vertical alignment */
+}
+
+
+
+/* Left Flexbox */
+.left-flexbox {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px; /* Adjust spacing between icons */
+    padding-bottom: 5px;
+}
+
+/* Logo styling */
+.logo {
+    width: 6em;
+    height: auto;
+}
+
+/* Icon styling */
+.icon {
+    height: 40px;
+    vertical-align: middle; /* Prevents spacing issues */
+}
+
+/* Right Flexbox */
+.right-flexbox {
+    margin-right: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* User info styling */
+.user-info { 
+    padding-right: 11px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px 5px 0 0;
+    border: 3px solid #a0a0a0;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    top: 6px; /* Slightly push it up */
+    box-shadow:  -1px -10px 8px -12px #a0a0a0;
+    background:  #f5f5f5; /* Slightly different for active */
+    border-bottom: 2px solid #f5f5f5; /* Removes bottom border */
+}
+.left-flexbox a,
+.right-flexbox a {
+    color: rgb(0, 81, 255);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+.mid {
+    padding-left: 14em;
+    display: flex;
+    gap: 5px;
+    justify-content: space-between; /* Keeps buttons in a row */
+    position: relative; /* Ensure it stays in place */
+}
+
+.mid button {
+    top: 1px; /* Pushes it slightly up for effect */
+    padding: 5px 10px;
+    margin-right: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #0056b3;
+    background: linear-gradient(to bottom, #ffffff, #dcdcdc); /* Creates the 3D effect */
+    border: 2px solid #a0a0a0; /* Slightly darker border */
+    border-radius: 6px 6px 0px 0px; /* Rounded top corners */
+    cursor: pointer;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.mid button.active {
+    color: #ff4500;
+    background: linear-gradient(to bottom, #ffffff, #f5f5f5); /* Slightly different for active */
+    border-bottom: 2px solid white; /* Removes bottom border */
+    position: relative;
+}
+.mid button.active1 {
+    color: #0056b3;
+    background: linear-gradient(to bottom, #ffffff, #f5f5f5); /* Slightly different for active */
+    border-bottom: 2px solid white; /* Removes bottom border */
+    position: relative;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 3px 8px;
+    width: 200px;
+    height: 26px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Search Input */
+.search-bar input {
+    border: none;
+    outline: none;
+    background: transparent;
+    flex-grow: 1;
+    font-size: 14px;
+    padding: 3px;
+}
+
+.search-button {
+    background: transparent;
+    border: #f5f5f5;
+    cursor: pointer;
+    position:relative;
+    justify-content: flex-end;
+    right: 1em;
+}
+
+
+/* Stats Bar */
+.stats {
+    display: flex;
+    align-items: center;
+    gap: 2px; /* Space between items */
+    margin-right: 5em;
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    padding-left: 8px;
+    padding-right:8px;
+}
+
+/* General Stats Box Styling */
+.stats span {
+    display: flex;
+    align-items: center;
+    padding: 3px 7px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Different Styling for Message, Links, Comments */
+.msg {
+    color: #ff6600;
+}
+
+.links {
+    color: #000;
+}
+
+.comments {
+    color: #444;
+}
+
+
+/* Navbar styles */
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1em;
+
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;  /* Align items in the same row */
+    gap: 1em;  /* Controls spacing between the elements */
+    padding-right: 0.5em;
+    padding-bottom: 5px;
+}
+nav {
+    border-top: 3px solid #a0a0a0;
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow:  -1px -10px 8px -12px #a0a0a0;
+    background: linear-gradient(to top, #dcdcdc, #f5f5f5); /* Slightly different for active */
+    border-bottom: 3px solid #a0a0a0; /* Removes bottom border */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Flexbox Container */
+.flex-container {
+    display: flex;
+    margin-top: 0;  /* Remove any margin */
+}
+
+/* Side Menu (Flexbox 1) */
+ul {
+    list-style-type: none;
+}
+.side-menu {
+    padding-top: 0.5em;
+    background: #e2f1ff;
+    border-top: 3px solid #a0a0a0;
+    border-right: 3px solid #a0a0a0;
+    border-bottom: 3px solid #a0a0a0;
+    border-top-right-radius: 5px;
+    color: white;
+    width: 200px; /* Set fixed width for the side menu */
+    position: fixed; /* Fix the side menu to the left side */
+    top: 70px; /* Align the top of the side menu with the bottom of the navbar */
+    bottom: 0; /* Let it extend down to the bottom */
+    box-sizing: border-box;
+    height: calc(100vh - 60px); /* Take full height excluding the navbar height */
+}
+
+li {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+li a {
+    text-decoration: none; /* Removes underline from all links */
+    color: black; /* Keeps default text color unless overridden */
+    padding-left: 1.5em;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+li a:hover {
+    text-decoration: underline; /* Optional: Adds underline on hover */
+}
+
+.more{
+    color: rgb(0, 81, 255);
+}
+
+.create-community {
+    border: 1px solid #a0a0a0;
+    color: #000;
+    background: #cae3fd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+    width: 11em;
+}
+
+.create-community h3{
+    color: #0056b3;
+}
+
+/* Content area (Flexbox 2 and 3) */
+.content-container {
+    margin-left: 200px; /* Ensure content starts after the side menu */
+    display: flex;
+    justify-content:space-evenly;
+    gap: 0; /* Remove space between Flexbox 2 and Flexbox 3 */
+    height: 86vh;
+    column-gap: 3px;
+    background: linear-gradient(to right, transparent 49.5%, #a0a0a0 49.5%, #a0a0a0 50.5%, transparent 50.5%);
+}
+
+/* Flexboxes in the content area */
+.box {
+    background-color: #ddd;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+.flexbox-2 {
+    background-color: #f8f8f8;
+    padding-top: 0;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.flexbox-3 {
+    background-color: #f8f8f8;
+    padding-top: 0;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.post-list {
+    list-style-type: none;
+    counter-reset: post-counter;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.post-list li {
+    counter-increment: post-counter;
+    display: flex;
+    align-items: center;
+    color: #eeeeee;
+    padding-right: 5px;
+    padding-left: 10px;
+    border-bottom: #a0a0a0 solid 1px;
+    margin: 0;
+}
+
+.post-list li.active {
+    background-color: #fceef7; 
+}
+
+.post-list li::before {
+    content: counter(post-counter);
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+.post-list li:hover {
+    background-color: rgb(236, 234, 234);
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%
+}
+
+.vote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+    margin-left: 10px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.vote-arrow {
+    font-size: 16px;
+    color: gray;
+    cursor: pointer;
+}
+
+.vote-count {
+    color: gray;
+    padding: 0;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.upvoted {
+    color: #fb7f52;
+}
+
+.up:hover {
+    color: #fb7f52;;
+}
+
+.downvoted {
+    color: rgb(179, 182, 245);
+}
+
+.down:hover {
+    color: rgb(179, 182, 245);
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    row-gap: 5px;
+    text-align: start;
+}
+
+.thumbnail img {
+    width: 90px;
+    height: 60px;
+    aspect-ratio: 4/3;
+    margin-right: 15px;
+}
+
+.title-container {
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.post-title {
+    text-align: left;
+    font-size: 15px;
+    color: blue;
+    text-decoration: none;
+    padding-left: 0;
+}
+
+.title-link {
+    color: gray;
+    padding: 0 5px
+}
+
+.post-meta {
+    font-size: 12px;
+    color: #777;
+}
+
+.post-meta a {
+    padding:0;
+    color:  blue;
+    cursor: pointer;
+}
+
+.actions {
+    font-weight: bold;
+    color: gray;
+    font-size: 12px;
+}
+
+.actions a {
+    padding:0;
+    margin-right: 3px;
+    color: gray;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 100px;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.button-container button {
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: linear-gradient(to bottom, #fff, #ddd);
+    color: #444;
+    font-weight: bold;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background: linear-gradient(to bottom, #eee, #ccc);
+}
+
+.button-container button {
+    display: flex;
+    align-items: center;
+}
+
+.button-container button img {
+    width: 20px;
+    margin: 0 3px;
+}
+.newer::before {
+    content: "← ";
+    color: #4682b4;
+}
+
+.older::after {
+    content: " →";
+    color: #4682b4;
+}
+
+
+.flexbox-3 {
+    height: 86vh;
+    background-color: #f8f8f8;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+.row1 {
+    border-bottom: 3px solid gray;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start; 
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.title span{
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.title a {
+    color: rgb(164, 164, 164);
+    margin-left: 5px;
+}
+
+.title a:hover {
+    text-decoration: underline rgb(164, 164, 164);
+    cursor: pointer;
+}
+
+.desc {
+    color: gray;
+    margin-top: 3px;
+}
+
+.bot {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.stat {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.post-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.votes {
+    padding: 5px 15px 5px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.up-vote {
+    color: red;
+}
+
+.down-vote {
+    color: blue;
+}
+
+.gray {
+    color: gray
+}
+.numPoints {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.points {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.likeIt {
+    font-weight: normal;
+    font-size: 15px;
+
+}
+
+
+/* Comment Box Styling */
+.comment-box {
+    display: flex;
+    align-items:flex-end;
+    gap: 5px;
+    padding: 10px;
+    padding-bottom: 0;
+    border-radius: 5px;
+    background: #f8f8f8;
+}
+
+/* Input Area */
+.comment-box textarea {
+    flex: 1;
+    height: 40px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    padding: 5px;
+    resize: none;
+}
+
+/* Save Button */
+.save-btn {
+    padding: 2px 8px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    background: #f5f5f5;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.save-btn:hover {
+    background: #e0e0e0;
+}
+
+/* Formatting Help Link */
+.formatting-help {
+    font-size: 12px;
+    color: #3366cc;
+    text-decoration: none;
+    margin-left: 435px;
+}
+
+.formatting-help:hover {
+    text-decoration: underline;
+}
+
+
+.comment-section {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-item {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 5px
+}
+
+.comment-item:hover {
+    background-color:#eeeeee;
+}
+
+.vote {
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    cursor: pointer;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.comments p {
+    text-align:justify;
+    margin-bottom: 3px;
+}
+
+.comments a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.comment-header {
+    margin-bottom: 3px;
+    font-size: 12px
+}
+
+.comments p {
+    text-align: left;
+}
+
+.username, .badge {
+    color: blue;
+    font-weight: bold;
+}
+
+.points, .time, .collapse{
+    color: gray;
+}
+
+.nested-comment {
+    margin-left: 40px; /* Indentation for replies */
+    margin-bottom: 5px;
+    padding-left: 10px;
+    border-left: 2px solid #ccc; /* Visual separator */
+}
+
+.comment-link {
+    color: blue;
+}
+
+.bullet-list {
+    list-style-type: disc; /* Makes the list bulleted */
+    padding-left: 30px;    /* Ensures proper indentation */
+    text-align: left;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;  /* Stack items vertically on smaller screens */
+        align-items: flex-start;
+    }
+
+    .right-flexbox {
+        justify-content: flex-start;  /* Left-align user info on mobile */
+        margin-top: 10px;  /* Add spacing between navbar items */
+    }
+}
+
